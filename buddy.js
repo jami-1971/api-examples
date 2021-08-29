@@ -10,9 +10,9 @@ const displayBuddies = data => {
     const buddiesDiv = document.getElementById('buddies-div');
 
     for (const buddy of buddies) {
-        console.log(buddy.name.first, buddy.name.last);
+        // console.log(buddy.name.first, buddy.name.last);
         const p = document.createElement('p');
-        p.innerText = `Name: ${buddy.name.title} ${buddy.name.first} ${buddy.name.last} \n Email: ${buddy.email}`;
+        p.innerHTML = `Name: ${buddy.name.title} ${buddy.name.first} ${buddy.name.last} \n Email: ${buddy.email}`;
         buddiesDiv.appendChild(p);
     }
 
